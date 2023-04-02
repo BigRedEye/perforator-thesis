@@ -32,6 +32,7 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
+          name: main.pdf
           path: main.pdf
           if-no-files-found: error
 
@@ -44,7 +45,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v2
         with:
-          name: pdf
+          name: main.pdf
           path: artifacts
 
       - name: Create pre-release
@@ -55,4 +56,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            artifacts/*
+            artifacts/main.pdf
