@@ -3,12 +3,12 @@ name: Build LaTeX document
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
     tags:
       - 'v*'
   pull_request:
     branches:
-      - 'master'
+      - 'main'
   schedule:
     # Start nighly builds at 03:24 UTC
     - cron: '24 3 * * *'
