@@ -14,7 +14,7 @@ on:
     - cron: '24 3 * * *'
 
 jobs:
-  build-image:
+  build-pdf:
     runs-on: ubuntu-latest
     permissions:
       contents: read
