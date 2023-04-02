@@ -1,0 +1,232 @@
+\usepackage{cmap}                   % поиск в PDF
+\usepackage{mathtext}               % русские буквы в формулах
+\usepackage{ulem}
+\usepackage{setspace}
+
+\usepackage[T2A]{fontenc}           % кодировка
+\usepackage[utf8]{inputenc}         % кодировка исходного текста. НИКОГДА НЕ МЕНЯТЬ.
+\usepackage[english,russian]{babel} % локализация и переносы
+\usepackage{epigraph}               % делать эпичные эпиграфы
+\usepackage{fancybox,fancyhdr}      % для колонтитулов
+\usepackage{physics}
+\usepackage{pstricks}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+\usepackage{ragged2e}
+\justifying
+
+%% Графика
+% \usepackage[pdftex]{graphicx}
+\usepackage[pdf]{graphviz}
+\graphicspath{{images/}}
+
+%% Различные пакеты для работы с математикой
+\usepackage{mathtools}      % Тот же amsmath, только с некоторыми поправками
+
+\usepackage{amssymb}        % Математические символы
+\usepackage{amsthm}         % Пакет для написания теорем
+\usepackage{amstext}
+\usepackage{array}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{amsfonts}
+\usepackage{icomma}         % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+\usepackage{enumitem}       % Для выравнивания itemize (\begin{itemize}[align=left])
+\usepackage{ifthen}
+
+
+% Номера формул
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+% Шрифты
+\usepackage{euscript}  % Шрифт Евклид
+\usepackage{mathrsfs}  % Красивый матшрифт
+
+\usepackage{caption}
+
+% Свои команды\textbf{}
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+\newcommand{\obig}{\mathcal{O}}
+\newcommand{\ls}{\leqslant}
+\newcommand{\gs}{\geqslant}
+\newcommand{\diff}{\mathrm{d}}
+
+% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+% Графики
+\usepackage{pgfplots}
+%\pgfplotsset{compat=1.12}
+
+% Алгоритмы
+\newcommand*\Let[2]{\State #1 $\gets$ #2}
+
+% Изменим формат \section и \subsection:
+% \usepackage{titlesec}
+% \titleformat{\section}
+% {\vspace{1cm}\centering\LARGE\bfseries} % Стиль заголовка
+% {}                        % префикс
+% {0pt}                     % Расстояние между префиксом и заголовком
+% {}                        % Как отображается префикс
+% \titleformat{\subsection} % Аналогично для \subsection
+% {\Large\bfseries}
+% {}
+% {0pt}
+% {}
+
+
+%% Функция для обнуление конкретного счётчика
+\def\ob#1{\setcounter{#1}{0}}
+
+%% Функция для обнуления всего. Обязательно вызывать в конце файла!
+\def\oball{\setcounter{Def}{0}\setcounter{Lem}{0}\setcounter{Sug}{0}
+\setcounter{eg}{0}\setcounter{Cmt}{0}\setcounter{cnsqnc}{0}\setcounter{th}{0}
+\setcounter{stnmt}{0}\setcounter{task}{0}\setcounter{dsg}{0}\setcounter{gen}{0} 
+\setcounter{dream}{0}\setcounter{prop}{0}}
+
+%% Определение счётчика + переопределение команд
+
+\newcounter{Def}\setcounter{Def}{0}
+\def\df{\par\smallskip\refstepcounter{Def}\textbf{\arabic{Def}}}
+\newtheorem*{Def}{Определение \df}
+
+\newcounter{Lem}\setcounter{Lem}{0}
+\def\lm{\par\smallskip\refstepcounter{Lem}\textbf{\arabic{Lem}}}
+\newtheorem*{Lemma}{Лемма \lm}
+
+\newcounter{Sug}\setcounter{Sug}{0}
+\def\sug{\par\smallskip\refstepcounter{Sug}\textbf{\arabic{Sug}}}
+\newtheorem*{Suggestion}{Предложение \sug}
+
+\newcounter{eg}\setcounter{eg}{0}
+\def\eg{\par\smallskip\refstepcounter{eg}\textbf{\arabic{eg}}}
+\newtheorem*{Example}{Пример \eg}
+
+\newcounter{Cmt}\setcounter{Cmt}{0}
+\def\cmt{\par\smallskip\refstepcounter{Cmt}\textbf{\arabic{Cmt}}}
+\newtheorem*{Note}{Замечание \cmt}
+
+\newcounter{cnsqnc}\setcounter{cnsqnc}{0}
+\def\cnsqnc{\par\smallskip\refstepcounter{cnsqnc}\textbf{\arabic{cnsqnc}}}
+\newtheorem*{Consequence}{Следствие \cnsqnc}
+
+\newcounter{th}\setcounter{th}{0}
+\def\th{\par\smallskip\refstepcounter{th}\textbf{\arabic{th}}}
+\newtheorem*{Theorem}{Теорема \th}
+
+\newcounter{stnmt}\setcounter{stnmt}{0}
+\def\st{\par\smallskip\refstepcounter{stnmt}\textbf{\arabic{stnmt}}}
+\newtheorem*{Statement}{Утверждение \st}
+
+\newcounter{task}\setcounter{task}{0}
+\def\task{\par\smallskip\refstepcounter{task}\textbf{\arabic{task}}}
+\newtheorem*{Task}{Упражнение \task}
+
+\newcounter{dsg}\setcounter{dsg}{0}
+\def\dsg{\par\smallskip\refstepcounter{dsg}\textbf{\arabic{dsg}}}
+\newtheorem*{Designation}{Обозначение \dsg}
+
+\newcounter{gen}\setcounter{gen}{0}
+\def\gen{\par\smallskip\refstepcounter{gen}\textbf{\arabic{gen}}}
+\newtheorem*{Generalization}{Обобщение \gen}
+
+\newcounter{dream}\setcounter{dream}{0}
+\def\dream{\par\smallskip\refstepcounter{dream}\textbf{\arabic{dream}}}
+\newtheorem*{Thedream}{Предел мечтаний \dream}
+
+\newcounter{prop}\setcounter{prop}{0}
+\def\prop{\par\smallskip\refstepcounter{prop}\textbf{\arabic{prop}}}
+\newtheorem*{Properties}{Свойство \prop}
+
+\renewcommand{\Re}{\mathsf{Re}}
+\renewcommand{\Im}{\mathsf{Im}}
+\newcommand{\Arg}{\mathrm{Arg\:}}
+\renewcommand{\arg}{\mathrm{arg\:}}
+\newcommand{\Mat}{\mathrm{Mat}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\isom}{\xrightarrow{\sim}} 
+\newcommand{\leftisom}{\xleftarrow{\sim}}
+\newcommand{\Hom}{\mathrm{Hom}}
+\newcommand{\Ker}{\mathrm{Ker}\:}
+\newcommand{\rk}{\mathrm{rk}\:}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\ort}{\mathrm{ort}}
+\newcommand{\pr}{\mathrm{pr}}
+\renewcommand{\top}{\overset{P}{\to}}
+\newcommand{\topn}{\overset{\text{\textit{п.н.}}}{\to}}
+\newcommand{\eqd}{\overset{d}{=}}
+\newcommand{\vol}{\mathrm{vol\:}}
+\def\limref#1#2{{#1}\negmedspace\mid_{#2}}
+\newcommand{\eps}{\varepsilon}
+
+\renewcommand{\phi}{\varphi} % плохо, так как есть \phi в англ раскладке.
+\newcommand{\e}{\mathrm{e}}
+\renewcommand{\l}{\lambda}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\C}{\mathbb{C}}
+\renewcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\br}[1]{\left(#1\right)}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\renewcommand{\P}[1]{\mathsf{P}\left[#1\right]}
+\newcommand{\E}[1]{\mathsf{E}\left[#1\right]}
+\newcommand{\D}[1]{\mathsf{D}\left[#1\right]}
+\newcommand{\F}[2]{\mathrm{F}_{#1}{\left(#2\right)}}
+\newcommand{\I}[1]{\mathbb{I}\set{#1}}
+\newcommand{\p}[2]{\mathrm{p}_{#1}{\left(#2\right)}}
+\newcommand{\cov}[1]{\mathsf{cov}\left[#1\right]}
+\newcommand{\floor}[1]{\left\lfloor#1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil#1\right\rceil}
+\newcommand{\intii}{\int_{-\infty}^\infty}
+\newcommand{\intiz}{\int_{-\infty}^0}
+\newcommand{\intzi}{\int_0^\infty}
+\newcommand{\PP}{\mathsf{P}}
+\newcommand{\EE}{\mathsf{E}}
+\newcommand{\DD}{\mathsf{D}}
+\newcommand{\ccov}{\mathbf{cov}}
+\renewcommand{\obig}{\mathcal{O}}
+\newcommand{\Pclass}{\mathbf{P}}
+\newcommand{\NPclass}{\mathbf{NP}}
+\newcommand{\coNPclass}{\mathbf{coNP}}
+\newcommand{\NPCclass}{\mathbf{NPC}}
+\newcommand{\SAT}{\mathsf{SAT}}
+
+\newcommand{\vvector}[1]{\begin{pmatrix}{#1}_1 \\\vdots\\{#1}_n\end{pmatrix}}
+\renewcommand{\vector}[1]{({#1}_1, \ldots, {#1}_n)}
+
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+
+\usetikzlibrary{calc,positioning,arrows}
+
+\newcounter{tasks}
+\setcounter{tasks}{1}
+\newcounter{subtaskcounter}
+\newenvironment{problem}[1][\arabic{tasks}] {
+    \setcounter{tasks}{#1}
+    \setcounter{subtaskcounter}{1}
+    \textbf{Задача #1.}
+
+    }
+    {
+    ~\\
+    \addtocounter{tasks}{1}
+}
+
+\newenvironment{subtask}[1][\alph{subtaskcounter}] {
+    	\par \textbf{({#1})}
+    }
+    {
+    ~\\
+    \addtocounter{subtaskcounter}{1}
+}

@@ -1,0 +1,66 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{indentfirst}
+\usepackage[colorlinks,citecolor=blue,linkcolor=blue,bookmarks=false,hypertexnames=true, urlcolor=blue]{hyperref} 
+\usepackage{indentfirst}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage[flushleft]{threeparttable}
+\usepackage{tablefootnote}
+
+\usepackage{chngcntr} % нумерация уравнений, графиков и таблиц по секциям
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+
+\graphicspath{{graphics/}} %путь к рисункам     You may leave it
+
+\geometry{left=2.5cm} % левое поле
+\geometry{right=1.5cm} % правое поле
+\geometry{top=1.5cm} % верхнее поле
+\geometry{bottom=1.5cm} % нижнее поле
+\renewcommand{\baselinestretch}{1.5} % междустрочный интервал
+
+\renewcommand{\theenumi}{\arabic{enumi}} % Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumi}{\arabic{enumi}} % Меняем везде перечисления на цифра.цифра
+\renewcommand{\theenumii}{.\arabic{enumii}} % Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.} % Меняем везде перечисления на цифра.цифра
+\renewcommand{\theenumiii}{.\arabic{enumiii}} % Меняем везде перечисления на цифра.цифра
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.} % Меняем везде перечисления на цифра.цифра
+
+\usepackage{header_book}
+
+\begin{document}
+\input{header}
+\newpage
+\input{toc}
+\newpage
+\input{annotation}
+\pagebreak
+\input{intro}
+% \input{comparison}
+
+% \input{arch}
+% \input{dev}
+% \input{future}
+
+\input{finally}
+
+\newpage 
+\input{literature}
+	
+\end{document}
