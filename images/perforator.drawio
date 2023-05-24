@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-23T00:53:34.387Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="z1aSxOJLrFYnjzIw8-Z8" version="21.2.8" type="device">
+<mxfile host="Electron" modified="2023-05-23T11:56:12.490Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="cFi2dkaohLxt7UYB4DWq" version="21.2.8" type="device">
   <diagram name="Страница 1" id="uUGXPo8AzU2IJs-jjgjA">
-    <mxGraphModel dx="2070" dy="1463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1600" math="0" shadow="0">
+    <mxGraphModel dx="1656" dy="1171" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="210" y="640" width="1120" height="860" as="geometry" />
         </mxCell>
         <mxCell id="Ml9DieXev5w7Eavj2J0n-51" value="YTsaurus" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="310" width="280" height="270" as="geometry" />
+          <mxGeometry x="1110" y="295" width="280" height="270" as="geometry" />
         </mxCell>
         <mxCell id="Ml9DieXev5w7Eavj2J0n-52" value="Perforator" style="swimlane;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="230" y="170" width="710" height="520" as="geometry" />
@@ -57,7 +57,7 @@
         </mxCell>
         <mxCell id="Ml9DieXev5w7Eavj2J0n-85" value="Store profile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;rotation=-20;" vertex="1" connectable="0" parent="Ml9DieXev5w7Eavj2J0n-75">
           <mxGeometry x="0.3479" relative="1" as="geometry">
-            <mxPoint x="12" y="18" as="offset" />
+            <mxPoint x="37" y="6" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ml9DieXev5w7Eavj2J0n-84" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="Ml9DieXev5w7Eavj2J0n-56" target="Ml9DieXev5w7Eavj2J0n-51">
@@ -67,9 +67,9 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ml9DieXev5w7Eavj2J0n-87" value="Store profile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;rotation=-10;" vertex="1" connectable="0" parent="Ml9DieXev5w7Eavj2J0n-84">
+        <mxCell id="Ml9DieXev5w7Eavj2J0n-87" value="Store profile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;rotation=-13;" vertex="1" connectable="0" parent="Ml9DieXev5w7Eavj2J0n-84">
           <mxGeometry x="0.034" y="4" relative="1" as="geometry">
-            <mxPoint x="-1" y="-13" as="offset" />
+            <mxPoint x="51" y="-27" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ml9DieXev5w7Eavj2J0n-92" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="Ml9DieXev5w7Eavj2J0n-91" target="Ml9DieXev5w7Eavj2J0n-51">
@@ -78,9 +78,9 @@
             <mxPoint x="780" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ml9DieXev5w7Eavj2J0n-93" value="List profiles" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;rotation=20;labelBackgroundColor=none;" vertex="1" connectable="0" parent="Ml9DieXev5w7Eavj2J0n-92">
+        <mxCell id="Ml9DieXev5w7Eavj2J0n-93" value="List profiles" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;rotation=17;labelBackgroundColor=none;" vertex="1" connectable="0" parent="Ml9DieXev5w7Eavj2J0n-92">
           <mxGeometry x="-0.0789" y="-1" relative="1" as="geometry">
-            <mxPoint x="-23" y="-31" as="offset" />
+            <mxPoint x="-61" y="-38" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ml9DieXev5w7Eavj2J0n-95" value="" style="endArrow=classic;html=1;rounded=0;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;" edge="1" parent="1" source="Ml9DieXev5w7Eavj2J0n-90" target="Ml9DieXev5w7Eavj2J0n-51">
@@ -89,9 +89,9 @@
             <mxPoint x="860" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ml9DieXev5w7Eavj2J0n-96" value="Get profile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;rotation=10;" vertex="1" connectable="0" parent="Ml9DieXev5w7Eavj2J0n-95">
+        <mxCell id="Ml9DieXev5w7Eavj2J0n-96" value="Get profile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;rotation=8;" vertex="1" connectable="0" parent="Ml9DieXev5w7Eavj2J0n-95">
           <mxGeometry x="0.0208" y="1" relative="1" as="geometry">
-            <mxPoint x="-8" y="-18" as="offset" />
+            <mxPoint x="-44" y="-18" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ml9DieXev5w7Eavj2J0n-37" value="Service &lt;font color=&quot;#ff9999&quot;&gt;foo&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;sketch=1;hachureGap=4;jiggle=2;curveFitting=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;swimlaneFillColor=none;" vertex="1" parent="1">

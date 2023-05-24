@@ -12,7 +12,7 @@ soup = BeautifulSoup(html, 'html.parser')
 
 title = soup.find('title')
 assert title is not None, "No title found"
-title = title.get_text().replace('#', '\\#')
+title = title.get_text().replace('#', '\\#').replace('_', '\\_')
 
 print(f'''@misc{{{name},
     title = {{{{{title}}}}},
