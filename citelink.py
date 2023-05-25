@@ -14,7 +14,8 @@ title = soup.find('title')
 assert title is not None, "No title found"
 title = title.get_text().replace('#', '\\#').replace('_', '\\_')
 
-print(f'''@misc{{{name},
+print(f'''
+@misc{{{name},
     title = {{{{{title}}}}},
     url = {{{url}}},
     note = {{[Accessed 14 May. 2023]}},
